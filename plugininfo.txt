@@ -1,0 +1,69 @@
+<plugin>
+
+<playerstat>
+	<label>Lives</label>
+	<initialvalue>9</initialvalue>
+</playerstat>
+
+<deckzone>
+     <label>Time Lord Deck</label>
+     <gamezonetoloadto>Time Lord Deck</gamezonetoloadto>
+     <shuffle>yes</shuffle>
+</deckzone>
+
+<deckzone>
+     <label>Temporal Marauder Deck</label>
+     <gamezonetoloadto>Marauder Deck</gamezonetoloadto>
+     <shuffle>yes</shuffle>
+</deckzone>
+
+<gamezone>
+     <label>Hand</label>
+     <visibletoowner>yes</visibletoowner>
+     <visibletoothers>no</visibletoothers>
+</gamezone>
+
+<gamezone>
+     <label>Time Lord Deck</label>
+     <isshared>yes</isshared>
+</gamezone>
+<gamezone>
+     <label>Marauder Deck</label>
+     <isshared>yes</isshared>
+</gamezone>
+
+<gamezone>
+     <label>Discard</label>
+     <visibletoowner>yes</visibletoowner>
+     <visibletoothers>yes</visibletoothers>
+     <isshared>yes</isshared>
+</gamezone>
+
+<phase><label>Start</label></phase>
+<phase><label>Bid</label></phase>
+<phase><label>End</label></phase>
+
+<generalfunction>
+	<label>Draw a Time Lord Card</label>
+	<kind>TRANSFERCARD</kind>
+	<sourceowner>shared</sourceowner>
+	<sourcegamezone>Time Lord Deck</sourcegamezone>
+	<sourceposition>top</sourceposition>
+	<destinationgamezone>Hand</destinationgamezone>
+	<includeasbutton>yes</includeasbutton>
+</generalfunction>
+
+<generalfunction>
+	<label>Draw a Marauder Card</label>
+	<kind>TRANSFERCARD</kind>
+	<sourceowner>shared</sourceowner>
+	<sourcegamezone>Marauder Deck</sourcegamezone>
+	<sourceposition>top</sourceposition>
+	<destinationgamezone>Hand</destinationgamezone>
+	<includeasbutton>yes</includeasbutton>
+</generalfunction>
+
+<generalfunction><label>Flip Coin</label><kind>FLIPCOIN</kind><includeasbutton>yes</includeasbutton></generalfunction>
+<generalfunction><label>Roll D10</label><kind>ROLLD10</kind><includeasbutton>yes</includeasbutton></generalfunction>
+
+</plugin>
