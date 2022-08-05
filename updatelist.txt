@@ -1,0 +1,5 @@
+DoctorWho	08-03-22
+plugins/DoctorWho/plugininfo.txt	https://github.com/timothy-m-gillick/lackeyccg-doctorwho/raw/main/plugininfo.txt	163625
+plugins/DoctorWho/sets/setimages/general/cardback.jpg	https://github.com/timothy-m-gillick/lackeyccg-doctorwho/raw/main/cardback.jpg	-22244
+CardGeneralURLs:		
+https://drive.google.com/drive/folders/1M4kMUIUU1j4VdFlIv58NPt9sm3Cf926L?usp=sharing
